@@ -10,7 +10,7 @@
 <body> 
 
 <div data-role="page" id="page">
-	<div data-role="header" data-position="fixed">
+	<div data-role="header" data-position="fixed"  data-theme="b">
 		<h1>中文网</h1>
  		<a href="#" data-role="button" class="ui-btn-right">搜索</a>
 	    <div data-role="navbar">
@@ -22,12 +22,110 @@
 	    </div>
 
 	</div>
-	<div data-role="content">	
+	<div data-role="content"  data-theme="a">	
 		<ul data-role="listview">
 			<li><a href="#page2" data-rel="dialog" data-transition="slide">关于我们</a></li>
             <li><a href="#page3">联系我们</a></li>
 			<li><a href="zhaopin.html" data-rel="dialog" data-ajax="false" data-transition="slide">求职招聘</a></li>
 		</ul>	
+	    <h2>有序列表：</h2>
+	    <ol data-role="listview">
+	      <li><a href="#">列表项</a></li>
+	      <li><a href="#">列表项</a></li>
+	      <li><a href="#">列表项</a></li>
+	    </ol>
+	    <h2>无序列表：</h2>
+	    <ul data-role="listview" data-inset="true">
+	      <li><a href="#">列表项</a></li>
+	      <li><a href="#">列表项</a></li>
+	      <li><a href="#">列表项</a></li>
+	    </ul>
+	    <h2>我的通讯录</h2>
+		  <ul data-role="listview" data-autodividers="true" data-inset="true" data-filter="true" data-filter-placeholder="搜索姓名">
+		    <li><a href="#">Adele</a></li>
+		    <li><a href="#">Agnes</a></li>
+		    <li><a href="#">Albert</a></li>
+		    <li><a href="#">Billy</a></li>
+		    <li><a href="#">Bob</a></li>
+		    <li><a href="#">Calvin</a></li>
+		    <li><a href="#">Cameron</a></li>
+		    <li><a href="#">Chloe</a></li>
+		    <li><a href="#">Christina</a></li>
+		    <li><a href="#">Diana</a></li>
+		    <li><a href="#">Gabriel</a></li>
+		    <li><a href="#">Glen</a></li>
+		    <li><a href="#">Ralph</a></li>
+		    <li><a href="#">Valarie</a></li>
+		  </ul>
+
+<ul data-role="listview">
+ <li data-role="list-divider">欧洲</li>
+  <li><a href="#">法国</a></li>
+  <li><a href="#">德国</a></li>
+ </ul>
+	    <div data-role="collapsible" data-collapsed="false">
+	      <h1>点击我 - 我可以折叠！</h1>
+	      <p>我是可折叠的内容。</p>
+	    </div>
+		<div data-role="collapsible">
+		 <h1>点击我 - 我可以折叠!</h1>
+		 <p>我是被展开的内容。</p>
+		 <div data-role="collapsible">
+		 <h1>点击我 - 我是嵌套的可折叠块！</h1>
+		 <p>我是嵌套的可折叠块中被展开的内容。</p>
+		 </div>
+		</div>
+		<div data-role="collapsible-set" data-inset="false">
+		 <div data-role="collapsible"data-collapsed-icon="arrow-d" data-expanded-icon="arrow-u">
+
+		 <h1>点击我 - 我可以折叠！</h1>
+		 <p>我是被展开的内容。</p>
+		 </div>
+		 <div data-role="collapsible">
+		 <h1>点击我 - 我可以折叠!</h1>
+		 <p>我是被展开的内容。</p>
+		 </div>
+		</div>
+		  <h2>我的邮箱</h2>
+    <ul data-role="listview" data-inset="true">
+      <li><a href="#">收件箱<span class="ui-li-count">25</span></a></li>
+      <li><a href="#">发件箱<span class="ui-li-count">432</span></a></li>
+      <li><a href="#">垃圾箱<span class="ui-li-count">7</span></a></li>
+    </ul>
+    <h2>列表图标：</h2>
+    <ul data-role="listview" data-inset="true">    
+      <li><a href="#">默认是右箭头</a></li>
+      <li data-icon="plus"><a href="#">data-icon="plus"</a></li>
+      <li data-icon="minus"><a href="#">data-icon="minus"</a></li>
+      <li data-icon="delete"><a href="#">data-icon="delete"</a></li>
+      <li data-icon="info"><a href="#">data-icon="info"</a></li>   
+      <li data-icon="false"><a href="#">data-icon="false"</a></li>
+    </ul>
+<div data-role="collapsible">
+    <h4>A</h4>
+    <ul data-role="listview">
+      <li><a href="#">Adam</a></li>
+      <li><a href="#">Angela</a></li>
+    </ul>
+  </div>
+
+    <div data-role="collapsible">
+    <h4>B</h4>
+    <ul data-role="listview">
+       <li><a href="#">Bill</a></li>
+       <li><a href="#">Bob</a></li>
+    </ul>
+    </div>
+
+    <div data-role="collapsible">
+    <h4>C</h4>
+    <ul data-role="listview">
+      <li><a href="#">Calvin</a></li>
+      <li><a href="#">Cameron</a></li>
+      <li><a href="#">Christina</a></li>
+    </ul>
+    </div>
+
 	    <div data-role="controlgroup" data-type="horizontal">
 		    <p>水平组合按钮:</p>
 		    <a href="#" data-role="button">按钮 1</a>
@@ -88,8 +186,240 @@
 	    <p><b>注意：</b> 将鼠标悬停在该图标上可以查看该工具提示文本：</p>
 	    <a href="#link" data-role="button" data-icon="search" data-iconpos="notext">搜索</a>
 
+    <h2>我的日历</h2>
+    <ul data-role="listview" data-inset="true">
+      <li data-role="list-divider">星期三, 1 月 2 日, 2013 <span class="ui-li-count">2</span></li>   
+      <li><a href="#">   
+        <h2>医生</h2>
+        <p><b>To Peter Griffin</b></p>
+        <p>Well, Mr. Griffin, I've looked into physical results.</p>
+        <p>Ah, Mr. Griffin, I'm not quite sure how to say this. Kim Bassinger? Bass singer? Bassinger?</p>
+        <p>But now, onto the cancer</p>
+        <p>You are a Cancer, right? You were born in July? Now onto these test results.</p>
+        <p class="ui-li-aside">Re: Appointment</p></a>
+      </li>
+      <li><a href="#">
+        <h2>Glen Quagmire</h2>
+        <p>Remember me this weekend!</p>
+        <br>
+        <p>- giggity giggity goo</p>
+        <p class="ui-li-aside">Re: Camping</p></a>
+      </li>
+      <li data-role="list-divider">周二, 1 月 1 日, 2013 <span class="ui-li-count">1</span></li>   
+      <li><a href="#">   
+        <h2>Louis</h2>
+        <p><b>Happy Girl!</b></p>
+        <p>Thank you so much!!</p>
+        <p class="ui-li-aside">Re: Christmas Gifts</p></a>
+      </li>
+    </ul>
+  <form method="post" action="demoform.asp">
+      <label for="fname">姓名：</label>
+      <input type="text" name="fname" id="fname">
+      <input type="submit" data-inline="true" value="提交">
+    </form>
+
+    <form method="post" action="demoform.asp">
+      <label for="fname" class="ui-hidden-accessible">姓名</label>
+      <input type="text" name="fname" id="fname" placeholder="姓名...">
+      <input type="submit" data-inline="true" value="提交">
+    </form>
+
+    <form method="post" action="demoform.asp">
+      <div data-role="fieldcontain">
+        <label for="lname">姓：</label>
+        <input type="text" name="lname" id="lname">
+        <label for="fname">名：</label>
+        <input type="text" name="fname" id="fname">
+      </div>
+      <input type="submit" data-inline="true" value="提交">
+    </form>
+
+    <form method="post" action="demo_form.php">
+      <div data-role="fieldcontain">
+        <label for="fullname">全名：</label>
+        <input type="text" name="fullname" id="fullname">       
+        <label for="bday">生日：</label>
+        <input type="date" name="bday" id="bday">
+        <label for="email">E-mail:</label>
+        <input type="email" name="email" id="email" placeholder="你的电子邮箱..">
+      </div>
+      <input type="submit" data-inline="true" value="提交">
+    </form>
+
+    <form method="post" action="demoform.php">
+       <div data-role="fieldcontain">
+        <label for="info">附加信息:</label>
+        <textarea name="addinfo" id="info"></textarea>
+      </div>
+      <input type="submit" data-inline="true" value="提交">
+    </form> 
+    <p><b>注意：</b> 文本框会根据你的输入自动调整文本框的高度，你可以在以上文本框输入内容，查看效果。</p>
+ <form method="post" action="demoform.asp">
+      <div data-role="fieldcontain">
+        <label for="search">搜索：</label>
+        <input type="search" name="search" id="search" placeholder="搜索内容...">
+      </div>
+      <input type="submit" data-inline="true" value="提交">
+    </form> 
+   <form method="post" action="demoform.asp">
+      <fieldset data-role="controlgroup">
+      <legend>请选择您的性别：</legend>
+        <label for="male">男性</label>
+        <input type="radio" name="gender" id="male" value="male">
+        <label for="female">女性</label>
+        <input type="radio" name="gender" id="female" value="female">	
+      </fieldset>
+        <input type="submit" data-inline="true" value="提交">
+    </form>
+    <form method="post" action="demoform.asp">
+      <fieldset data-role="controlgroup">
+        <legend>请选择您喜爱的颜色：</legend>
+          <label for="red">红色</label>
+          <input type="checkbox" name="favcolor" id="red" value="red">
+          <label for="green">绿色</label>
+          <input type="checkbox" name="favcolor" id="green" value="green">
+          <label for="blue">蓝色</label>
+          <input type="checkbox" name="favcolor" id="blue" value="blue">	
+      </fieldset>
+      <input type="submit" data-inline="true" value="提交">
+    </form>
+
+    <form method="post" action="demoform.asp">
+      <div data-role="fieldcontain">
+        <fieldset data-role="controlgroup">
+        <legend>请选择您的性别：</legend>
+          <label for="male">男性</label>
+          <input type="radio" name="gender" id="male" value="male">
+          <label for="female">女性</label>
+          <input type="radio" name="gender" id="female" value="female">	
+        </fieldset>
+      </div>
+      <div data-role="fieldcontain">
+        <fieldset data-role="controlgroup">
+          <legend>请选择您喜爱的颜色：</legend>
+            <label for="red">红色</label>
+            <input type="checkbox" name="favcolor" id="red" value="red">
+            <label for="green">绿色</label>
+            <input type="checkbox" name="favcolor" id="green" value="green">
+            <label for="blue">蓝色</label>
+            <input type="checkbox" name="favcolor" id="blue" value="blue">	
+        </fieldset>
+      </div>
+      <input type="submit" data-inline="true" value="提交">
+    </form>
+
+    <form method="post" action="demoform.php">
+      <fieldset data-role="controlgroup" data-type="horizontal">
+      <legend>请选择您的性别：</legend>
+        <label for="male">男性</label>
+        <input type="radio" name="gender" id="male" value="male">
+        <label for="female">女性</label>
+        <input type="radio" name="gender" id="female" value="female">	
+      </fieldset>
+
+      <fieldset data-role="controlgroup" data-type="horizontal">
+        <legend>请选择您喜爱的颜色：</legend>
+          <label for="red">红色</label>
+          <input type="checkbox" name="favcolor" id="red" value="red">
+          <label for="green">绿色</label>
+          <input type="checkbox" name="favcolor" id="green" value="green">
+          <label for="blue">蓝色</label>
+          <input type="checkbox" name="favcolor" id="blue" value="blue">	
+      </fieldset>
+      <input type="submit" data-inline="true" value="提交">
+    </form>
+
+    <form method="post" action="demoform.asp">
+      <fieldset data-role="fieldcontain">
+        <label for="day">选择天</label>
+        <select name="day" id="day">
+         <option value="mon">星期一</option>
+         <option value="tue">星期二</option>
+         <option value="wed">星期三</option>
+         <option value="thu">星期四</option>
+         <option value="fri">星期五</option>
+         <option value="sat">星期六</option>
+         <option value="sun">星期日</option>
+        </select>
+      </fieldset>
+      <input type="submit" data-inline="true" value="提交">
+    </form>
+
+    <form method="post" action="demoform.asp">
+      <fieldset data-role="fieldcontain">
+        <label for="day">选择天</label>
+        <select name="day" id="day">
+		<optgroup label="工作日">
+         <option value="mon">星期一</option>
+         <option value="tue">星期二</option>
+         <option value="wed">星期三</option>
+         <option value="thu">星期四</option>
+         <option value="fri">星期五</option>
+		</optgroup>
+		<optgroup label="周末">
+         <option value="sat">星期六</option>
+         <option value="sun">星期日</option>
+		</optgroup>
+        </select>
+      </fieldset>
+      <input type="submit" data-inline="true" value="提交">
+    </form>
+
+    <form method="post" action="demoform.asp">
+      <fieldset data-role="fieldcontain">
+        <label for="day">选择天</label>
+        <select name="day" id="day" data-native-menu="false">
+         <option value="mon">星期一</option>
+         <option value="tue">星期二</option>
+         <option value="wed">星期三</option>
+         <option value="thu">星期四</option>
+         <option value="fri">星期五</option>
+         <option value="sat">星期六</option>
+         <option value="sun">星期日</option>
+        </select>
+      </fieldset>
+      <input type="submit" data-inline="true" value="提交">
+    </form>
+  
+  <form method="post" action="demoform.asp">
+   <fieldset>
+   <label for="day">您可以选择多天：</label>
+   <select name="day" id="day" multiple="multiple" data-native-menu="false">
+	<option>天</option>
+	<option value="mon">星期一</option>
+	<option value="tue">星期二</option>
+	<option value="wed">星期三</option>
+	<option value="thu">星期四</option>
+	<option value="fri">星期五</option>
+	<option value="sat">星期六</option>
+	<option value="sun">星期日</option>
+   </select>
+   </fieldset>
+   <input type="submit" data-inline="true" value="提交">
+  </form>
+  <p>提示：如需为列表添加标题，请插入不包含 value 属性的 option 元素。</p>
+ <form method="post" action="demoform.asp">
+      <div data-role="fieldcontain">
+        <label for="points">Points:</label>
+        <input type="range" name="points" id="points" value="50" min="0" max="100" data-highlight="true">
+      </div>
+      <input type="submit" data-inline="true" value="提交">
+    </form>
+
+    <form method="post" action="demoform.asp">
+      <div data-role="fieldcontain">
+        <label for="switch">切换开关：</label>
+        <select name="switch" id="switch" data-role="slider">
+          <option value="on">On</option>
+          <option value="off">Off</option>
+        </select>
+      </div>
+      <input type="submit" data-inline="true" value="提交">
+    </form>
+  
 </div>
-	<div data-role="footer" class="ui-btn" data-position="fixed">
+	<div data-role="footer" class="ui-btn" data-position="fixed"   data-theme="b">	
 
 	 <div data-role="controlgroup" data-type="horizontal">
 		 <a href="#" data-role="button" data-icon="plus">在Facebook上关注我</a>
