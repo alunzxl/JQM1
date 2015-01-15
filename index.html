@@ -1,0 +1,182 @@
+<!DOCTYPE html> 
+<html>
+<head>
+<meta charset="utf-8">
+<title>jQuery Mobile页面基本组成</title>
+<link href="css/jquery.mobile-1.4.5.min.css" rel="stylesheet" type="text/css"/>
+<script src="js/jquery.min.js" type="text/javascript"></script>
+<script src="js/jquery.mobile-1.4.5.min.js" type="text/javascript"></script>
+</head> 
+<body> 
+
+<div data-role="page" id="page">
+	<div data-role="header" data-position="fixed">
+		<h1>中文网</h1>
+ 		<a href="#" data-role="button" class="ui-btn-right">搜索</a>
+	    <div data-role="navbar">
+	      <ul>
+	        <li><a href="#" class="ui-btn-active ui-state-persist" data-icon="home">首页</a></li>
+	        <li><a href="#pagetwo" data-icon="arrow-r">页面二</a></li>
+	        <li><a href="#" data-icon="search">搜索</a></li>
+	      </ul>
+	    </div>
+
+	</div>
+	<div data-role="content">	
+		<ul data-role="listview">
+			<li><a href="#page2" data-rel="dialog" data-transition="slide">关于我们</a></li>
+            <li><a href="#page3">联系我们</a></li>
+			<li><a href="zhaopin.html" data-rel="dialog" data-ajax="false" data-transition="slide">求职招聘</a></li>
+		</ul>	
+	    <div data-role="controlgroup" data-type="horizontal">
+		    <p>水平组合按钮:</p>
+		    <a href="#" data-role="button">按钮 1</a>
+		    <a href="#" data-role="button">按钮 2</a>
+		    <a href="#" data-role="button">按钮 3</a>
+	    </div>
+	    <br>
+	    
+	    <div data-role="controlgroup" data-type="vertical">
+		    <p>垂直组合按钮 (默认):</p>
+		    <a href="#" data-role="button">按钮 1</a>
+		    <a href="#" data-role="button">按钮 2</a>
+		    <a href="#" data-role="button">按钮 3</a>
+	    </div>
+
+	  <p>不带圆角的按钮:</p>
+	  <a href="#" data-role="button">按钮 1</a>
+	  <a href="#" data-role="button" data-corners="false">按钮 2</a>
+	  <br>
+  
+	  <p>内联按钮且不带圆角:</p>
+	  <a href="#" data-role="button" data-inline="true">按钮 1</a>
+	  <a href="#" data-role="button" data-inline="true">按钮 2</a>
+	  <br>
+	  <a href="#" data-role="button" data-inline="true" data-corners="true">按钮 1</a>
+	  <a href="#" data-role="button" data-inline="true" data-corners="true">按钮 2</a>
+
+	  <p>普通按钮与迷你按钮:</p>
+	  <a href="#" data-role="button">按钮 1</a>
+	  <a href="#" data-role="button" data-mini="true">按钮 2</a>
+	  <br>
+	  
+	  <p>内联按钮：普通与迷你</p>
+	  <a href="#" data-role="button" data-inline="true">按钮 1</a>
+	  <a href="#" data-role="button" data-inline="true">按钮 2</a>
+	  <br>
+	  <a href="#" data-role="button" data-inline="true" data-mini="true">按钮 1</a>
+	  <a href="#" data-role="button" data-inline="true" data-mini="true">按钮 2</a>
+
+
+	  <a href="#" data-role="button" data-icon="arrow-l">左边箭头图标</a>
+	  <a href="#" data-role="button" data-icon="arrow-r">右边箭头图标</a>
+	  <a href="#" data-role="button" data-icon="delete">删除按钮</a>
+	  <a href="#" data-role="button" data-icon="info">信息</a>
+	  <a href="#" data-role="button" data-icon="home"> 首页 </a>
+	  <a href="#" data-role="button" data-icon="back">  后退  </a>
+	  <a href="#" data-role="button" data-icon="home"> 搜索 </a>
+	  <a href="#" data-role="button" data-icon="search"> 首页 </a>
+	  <a href="#" data-role="button" data-icon="grid"> 网格 </a>
+
+	    <p>定位图标:</p>
+	    <a href="#link" data-role="button" data-icon="search" data-iconpos="top">顶部</a>
+	    <a href="#link" data-role="button" data-icon="search" data-iconpos="right">右侧</a>
+	    <a href="#link" data-role="button" data-icon="search" data-iconpos="bottom">底部</a>
+	    <a href="#link" data-role="button" data-icon="search" data-iconpos="left">左侧</a>
+
+	    <p>只带图片不带文字按钮</p>
+	    <p><b>注意：</b> 将鼠标悬停在该图标上可以查看该工具提示文本：</p>
+	    <a href="#link" data-role="button" data-icon="search" data-iconpos="notext">搜索</a>
+
+</div>
+	<div data-role="footer" class="ui-btn" data-position="fixed">
+
+	 <div data-role="controlgroup" data-type="horizontal">
+		 <a href="#" data-role="button" data-icon="plus">在Facebook上关注我</a>
+		 <a href="#" data-role="button" data-icon="plus">在Twitter上关注我</a>
+	 </div>
+	</div>
+</div>
+
+<div data-role="page" id="page2">
+	<div data-role="header">
+		<h1>关于我们</h1>
+	</div>
+	<div data-role="content">	
+		内容
+		<a href="#" data-role="button" data-rel="back">返回</a>
+	</div>
+	<div data-role="footer">
+		<h4>页脚</h4>
+	</div>
+</div>
+
+<div data-role="page" id="page3">
+	<div data-role="header">
+		<h1>联系我们</h1>
+	</div>
+	<div data-role="content">	
+		内容
+	</div>
+	<div data-role="footer">
+		<h4>页脚</h4>
+	</div>
+</div>
+
+<div data-role="page" id="page4">
+	<div data-role="header">
+		<h1>求职招聘</h1>
+	</div>
+	<div data-role="content">	
+		内容
+	</div>
+	<div data-role="footer">
+		<h4>页脚</h4>
+	</div>
+</div>
+
+<div data-role="page" id="pagetwo">
+   <div data-role="header">
+    <h1>欢迎来到我的主页</h1>
+    <div data-role="navbar">
+      <ul>
+        <li><a href="#page" data-icon="home">首页</a></li>
+        <li><a href="#" data-icon="arrow-r" class="ui-btn-active ui-state-persist">页面二</a></li>
+	        <li><a href="#" data-icon="search">搜索</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div data-role="content">
+    <div data-role="navbar">
+      <ul>
+        <li><a href="#" data-icon="plus">更多</a></li>
+        <li><a href="#" data-icon="minus">更少</a></li>
+        <li><a href="#" data-icon="delete">删除</a></li>
+        <li><a href="#" data-icon="check">喜爱</a></li>
+        <li><a href="#" data-icon="info">信息</a></li>
+      </ul>
+    </div>
+
+    <p>本页中没有被预选的按钮（突出显示）。</p> 
+    <p>如需让按钮被选的外观表示当前正在访问页面，请返回导航栏教程，继续向下阅读。</p>
+  </div>
+
+  <div data-role="footer">
+    <h1>我的页脚</h1>
+    <div data-role="navbar">
+      <ul>
+        <li><a href="#" data-icon="plus">更多1</a></li>
+        <li><a href="#" data-icon="minus">更少1</a></li>
+        <li><a href="#" data-icon="delete">删除1</a></li>
+        <li><a href="#" data-icon="check">喜爱1</a></li>
+        <li><a href="#" data-icon="info">信息1</a></li>
+      </ul>
+    </div>
+  
+  </div>
+</div> 
+
+
+</body>
+</html>
